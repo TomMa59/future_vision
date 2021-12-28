@@ -19,3 +19,4 @@ The result page of the API displays the image to be predicted, the predicted
 mask and an overlap of these two images.
 
 Final metrics are a pixel-per-pixel accuracy of 91,97% and IoU of 71,37%.
+![predicted_mask_on_image](https://user-images.githubusercontent.com/86012823/147565523-095321bc-e8d3-443c-8df6-a55abb094763.png)
