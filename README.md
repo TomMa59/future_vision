@@ -1,6 +1,8 @@
 This Flask API, which can be launched with python app.py or using a Docker makes
 predictions on different images for autonomous vehicles.
 
+For use, either use conda environment with python 3.9.7 + requirements.txt with pip or a container with included Dockerfile.
+
 A sample of 20 images from the CityScape Dataset is present. These images where
 never seen by the model (neither in training or in validation set).
 
