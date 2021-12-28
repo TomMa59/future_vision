@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <!-- Header -->
+  <header>
+    <div class="container" id="maincontent" tabindex="-1">
+      <div class="row">
+          <div class="col-lg-6 col-lg-offset-3">
+          </div>
+      </div>
+      <div class="row">
+        <div class="intro-text">
+          <h1 class="name">Base Image</h1>
+          <body>
+          <div class="bd-example" align="middle">
+          <img src="{{ url_for('static', filename='data/output/init_image.png') }}" width="100%"></img>
+          </div>
+          </body>
+      </div>
+        </div>
+      <div class="row">
+        <div class="intro-text">
+          <h1 class="name">Predicted Mask</h1>
+          <body>
+          <div class="bd-example" align="middle">
+          <img src="{{ url_for('static', filename='data/output/predicted_mask.png') }}" width="100%"></img>
+          </div>
+          </body>
+      </div>
+        </div>
+      <div class="row">
+        <div class="intro-text">
+          <h1 class="name">Predicted Mask Displayed on Image</h1>
+          <body>
+          <div class="bd-example" align="middle">
+          <img src="{{ url_for('static', filename='data/output/predicted_mask_on_image.png') }}" width="100%"></img>
+          </div>
+          </body>
+          <form method="POST" action="{{ url_for('index') }}">
+          <button type="submit" class="btn btn-default">Make New Prediction</button>
+          </form>
+      </div>
+        </div>
+    </div>
+  </header>
+
+<body id="page-top" class="index">
+<div id="skipnav"><a href="#maincontent">Contenu principal</a></div>
+
+<body>
+<div class="bd-example" align="middle">
+</div>
+</body>
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                  <a class="navbar-brand" href="/">Cityscape - FPN model prediction</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+
+
+
+{% endblock %}
